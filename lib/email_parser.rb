@@ -9,7 +9,7 @@ class EmailParser
   end
 
   def parse
-    @estring.split(/[, ]+/)
+    @estring.split(/[, ]+/).unique
   end
 
 end
